@@ -11,7 +11,7 @@
       apt:
         name: tree
         state: present
-      ignore-errors: true
+      ignore_errors: yes  # Fixed incorrect placement of ignore-errors
 
     - name: install wget
       apt:
