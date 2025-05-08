@@ -24,4 +24,9 @@
       dest: /home/maha/myfolder/
       force_basic_auth: yes
 
+  - name: i want to install apachee
+    apt:
+      name: apache2
+      state: present
+
   
