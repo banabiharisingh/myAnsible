@@ -24,9 +24,11 @@
       dest: /home/maha/myfolder/
       force_basic_auth: yes
 
-  - name: i want to install apachee
-    apt:
-      name: apache2
-      state: present
+  - name: i want to copy index file into node side
+    templates:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+
+
 
   
