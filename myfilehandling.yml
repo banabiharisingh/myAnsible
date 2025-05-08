@@ -13,4 +13,15 @@
       path: /home/maha/myfolder
       state: directory
 
+  - name: copy a file into a folder in node
+    copy:
+      src: mytextfille
+      dest: /home/maha/myfolder
+
+  - name: how to download any internet file
+    get_url:
+      url: https://github.com/banabiharisingh/myAnsible/archive/refs/heads/main.zip
+      dest: /home/maha/myfolder/
+      force_basic_auth: yes
+
   
