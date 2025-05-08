@@ -10,7 +10,7 @@
     - name: install tree
       apt:
         name: tree
-        statee: present   # Fixed "statee" typo
+        state: present
       ignore-errors: true
 
     - name: install wget
